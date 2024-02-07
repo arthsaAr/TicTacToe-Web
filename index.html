@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe Web Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page1">
+<h1 class="firstline">TicTacToe Game Online</h1> 
+<h3 class="secondline">Welcome to Tic Tac Toe</h3> 
+
+<form id="inputform" method="get">
+    <div class="nameinputfield">
+        <input type="text" id="Pname" name="Pname" placeholder="Username" required>
+    </div> 
+    <br>
+    <div class="startgamebutton">
+        <input type="submit" id="start-btn" name="Pname" value="Start the Game" required>
+    </div>   
+</form>    
+</div>
+
+
+<div class="page2 hide">
+    <h3 class="firstlinesecondpage"><b>TicTacToe Game</b> ONLINE</h3> 
+        <div class="overall">
+            <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset-btn">RESET</button>
+        <div class="message-container hide">
+            <p id="msg">Winner</p>
+            <button id="new-btn">NEW GAME</button>
+        </div>
+    </div>
+<script src="game.js"></script>
+</body>
+</html>

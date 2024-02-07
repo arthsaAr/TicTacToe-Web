@@ -1,0 +1,133 @@
+body {
+     background-color: rgb(23, 112, 23);  /*Setting background color of the page*/
+    font-family: sans-serif;                /*Using Sans-serif font for the body */
+    padding: 20px;                          /*Adding padding to all the elements of the body*/
+    text-align: center;                     /*Using the padding of 20px to make the texts better align with other elements in the webpage*/
+  }
+
+.page1                                      /*modifying first div element with class page1*/
+{
+  background-color: rgb(179, 241, 138);   /*Changing the background of the div*/
+  width: 300px;
+  border: 10px solid rgb(66, 235, 66);    /*Setting color for the border of the div*/ 
+  padding: 80px;
+  margin: auto;                             /*putting the element to center horizontally*/
+}
+
+
+.page2                                      /*modifying second div element with class page2*/ 
+{
+  background-color: rgb(179, 241, 138);
+  width: 400px;
+  border: 10px solid rgb(66, 235, 66); 
+  padding: 80px;
+  margin: auto;
+}
+
+  .firstline {                              /*First line of heading 1*/
+    text-align: center;                     /*Alighning to the center of the page1 div*/
+    font-size: 35px;
+    text-shadow: 1px 1px gold;            /*creating stroke effect with shadow*/
+    padding: 0px;                           /*Using the padding of 10px to make the texts better align with other elements in the webpage*/
+    margin-top: 0px;                        /*distance from the element at the top of h1*/
+    margin-bottom: 10px;    
+  }
+
+  .firstlinesecondpage {
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0.3px 0.3px gold;        /*creating stroke effect with shadow*/
+    padding: 0px;                           /*Using the padding of 10px to make the texts better align with other elements in the webpage*/
+    margin-top: 0px;                        /*distance from the element at the top of h1*/
+    margin-bottom: 10px;
+  }
+
+  .secondline {
+    text-align: center;
+  }
+
+  .nameinputfield, .startgamebutton 
+  {
+    text-align: center;
+  }
+
+  :placeholder-shown {
+    text-align: center;                   /*alighning the input box in the center of the div*/
+  }
+
+  .overall {
+    height: 70vh;                         /*Giving 70% of total size of the page for the gameboard*/
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+
+.game {                                   /*Using some common styling for all the boxes*/
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;                          /*all the boxes comes to same line */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+  position: absolute;
+}
+
+.box {                                  /*Using some styling for specific boxes with class box*/
+  height: 18vmin;
+  width: 18vmin;
+  display: flex;                        /*all the boxes comes to same line */
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;                  /*Using a round edge effect on all the boxes*/
+  border: none;                         /*removing the default border of the boxes*/
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2); /*using shadow so tha box are more visible and looks good*/
+  font-size: 8vmin;
+  color: brown;
+  background-color: aliceblue;          /*using the background color for just the box as aliceblue*/
+}
+
+.box:not([disabled]):hover {              /*using the hover effects on those boxes which are not disabled after they are used in the game*/
+  height: 18vmin;
+  width: 18vmin;
+  display: flex;                          /*all the boxes comes to same line */
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: none; 
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+  font-size: 8vmin;
+  background-color: lightblue;          /*Using the color for hover as light blue*/
+  opacity: 100%;                          /*with the opacity of 80%*/
+}
+
+#reset-btn {
+  padding: 2%;
+  font-size: 1rem;
+  background-color: rgb(26, 104, 7);    /*Background for the reset button as green*/
+  color: rgb(200, 255, 0);              /*And color of the text in the reset button as yellow so that it can be visible*/
+  border-radius: 1rem;
+  border: none;
+}
+
+#new-btn {
+  padding: 2%;
+  font-size: 1rem;
+  background-color: rgb(26, 104, 7);    /*Background for the reset button as green*/
+  color: rgb(200, 255, 0);              /*And color of the text in the reset button as yellow so that it can be visible*/
+  border-radius: 1rem;
+  border: none;
+}
+
+#msg {
+  color: rgb(255, 51, 0);               /*Using the font for the message/decision message as red*/
+  font-size: 3vmin;
+}
+
+.msg-container {
+  height: 5vmin;                          /*Changing the height of overall div with class id message container*/
+}
+
+.hide {
+  display: none;                          /*Hiding some elements when the page is at the beggining page and using javascript to make it unhide afterwards*/
+}
